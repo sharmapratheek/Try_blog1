@@ -1,0 +1,6 @@
+<h1>Blogging</h1>
+<% @pages.each do |page| %>
+	<p><span>&nbsp; &nbsp; &nbsp;</span><%= page.title %></p>
+	<p>&nbsp; &nbsp; &nbsp;<%= link_to 'Show', page %></p>
+<% end %>
+<span>&nbsp; &nbsp; &nbsp;</span><%= link_to 'New Page', new_page_path %>	
